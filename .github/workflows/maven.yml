@@ -43,7 +43,7 @@ jobs:
       env:
         TOMCAT_USER: admin
         TOMCAT_PASSWORD: admin
-        TOMCAT_HOST: http://3.110.102.121
+        TOMCAT_HOST: 3.110.102.121
         TOMCAT_PORT: 8085
       run: |
         WAR_FILE=$(ls target/*.war)
