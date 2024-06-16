@@ -47,4 +47,4 @@ jobs:
         TOMCAT_PORT: 8085
       run: |
         WAR_FILE=$(ls target/*.war)
-        curl --upload-file "$WAR_FILE" "http://${{ env.TOMCAT_USER }}:${{ env.TOMCAT_PASSWORD }}@${{ env.TOMCAT_HOST }}:${{ env.TOMCAT_PORT }}/manager/text/deploy?path=/yourapp&update=true"
+        curl --upload-file "$WAR_FILE" "http://${{ env.TOMCAT_USER }}:${{ env.TOMCAT_PASSWORD }}@${{ env.TOMCAT_HOST }}:${{ env.TOMCAT_PORT }}/manager/text/deploy?path=/JtSpringProject&update=true"
